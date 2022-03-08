@@ -1,53 +1,35 @@
-.heading
-{
-  font-size: 23px;
-  width: 100%;
-  margin: 0px;
-}
-.note
-{
-  font-size: 15px;
-  color: black;
-}
 body
 {
-  background-size: cover;	
+    background-size: cover;
+    background-position: center;
 }
-  .div_speed
-  {
-  	float: left;
-  }
-  .div_speed_img
-  {
-  	width: 200px; 
-  	border-radius: 100px;
-  }
-  #speed
-  {
-  	font-size: 23px;
-  	margin: 15px;
-  }
-  .div_volume
-  {
-  	float: right;	
-  }
-  .div_volume_img
-  {
-  	width: 200px; 
-  	border-radius: 100px;
-  }
-  #volume
-  {
-  	font-size: 23px;
-  	margin: 15px;
-  }
-   .play_button
-  {
-  	width: 130px;
-  	font-size: 25px;
-  }
-    canvas 
-  {
-    border:5px solid white;
-    border-radius:20px;
-  }
+
+.heading
+{
+    box-shadow: 10cm 10cm 10cm red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: double;
+}
+
+.note
+{
+    border-top-style: dashed;
+    padding: auto;
+}
+
+canvas
+{
+    background-color: white;
+    border: 5px solid;
+    border-radius: 20px;
+
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example
+{
+    from{border: 5px solid red;}
+    to{border: 5px solid yellow;}
+}
